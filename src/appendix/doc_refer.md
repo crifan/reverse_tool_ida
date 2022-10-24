@@ -8,7 +8,26 @@ TODO：
 
 此处整理IDA相关的文档、教程、书籍等有价值的参考资料。
 
-## IDA的tip of week
+## IDA官网
+
+IDA的官网：
+
+https://www.hex-rays.com
+
+本身就有很多不错的教程和资料。
+
+### IDA官网在线文档
+
+* 文档总入口：https://hex-rays.com/documentation/
+  * Help总入口：https://hex-rays.com/products/ida/support/idadoc/index.shtml
+  * 反编译器：https://hex-rays.com/products/decompiler/manual/index.shtml
+    * 其中最常用的一些：
+      * 伪代码中右键菜单中的各种功能
+        * [Interactive operation](https://hex-rays.com/products/decompiler/manual/interactive.shtml)
+      * 常见问题和错误
+        * [Failures and troubleshooting](https://hex-rays.com/products/decompiler/manual/failures.shtml)
+
+### IDA的tip of week
 
 [tip of week index (hex-rays.com)](https://hex-rays.com/wp-content/uploads/2021/10/igor-tip-of-the-week-S01.pdf)
 
@@ -18,7 +37,7 @@ TODO：
 
 有空可以看看
 
-## IDA官网的下载中心
+### IDA官网的下载中心
 
 IDA官网的下载中心：
 
@@ -136,3 +155,11 @@ IDA官网的下载中心：
 ![BH_Eagle_ida_pro](../assets/img/BH_Eagle_ida_pro.png)
 
 下载到此处 [BH_Eagle_ida_pro.pdf](assets/../../assets/files/BH_Eagle_ida_pro.pdf) 供下载和学习。
+
+## 其他待学习和待研究的资料
+
+* [IDA software reverse engineering - Code World (codetd.com)](https://www.codetd.com/en/article/12818634)
+  * IDA的用法，内容很多，值得看看。
+* [IDA Pro Tips to Add to Your Bag of Tricks – PT SWARM (ptsecurity.com)](https://swarm.ptsecurity.com/ida-pro-tips/)
+  * 这里有很多感觉有用的，值得参考的内容，抽空去研究学习
+* 

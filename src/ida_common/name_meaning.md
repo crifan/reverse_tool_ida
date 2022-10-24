@@ -47,6 +47,42 @@ IDA经常会自动生成假名字。他们用于表示子函数，程序地址�
   * qword_3A97BE0
     * ![ida_example_qword](../assets/img/ida_example_qword.jpg)
 
+### sub函数
+
+关于sub函数的一些细节说明：
+
+* `sub_xxx`：普通的函数（有代码处理逻辑的）
+  * 比如去改名的话，可以改名叫做：
+    * sub_BinaryOffset
+    * sub_AddressInsideBinary
+* `nullsub_xxx`：空函数（没有任何代码逻辑的）
+
+此处给出实例：
+
+举例：
+
+【未解决】研究抖音越狱检测逻辑：_RxAnnotationInlineLoader的load
+
+中的：
+
+```c
+void __cdecl +[_RxAnnotationInlineLoader load](_RxAnnotationInlineLoader_meta *self, SEL a2)
+{
+。。。
+    j___dyld_register_func_for_add_image((void (__cdecl *)(const struct mach_header *, intptr_t))sub_11326A84);
+    j___dyld_register_func_for_remove_image((void (__cdecl *)(const struct mach_header *, intptr_t))nullsub_12445);
+```
+
+![ida_sub_nullsub_example](../assets/img/ida_sub_nullsub_example.png)
+
+* _dyld_register_func_for_add_image传入的函数：sub_11326A84
+  * 就是个普通的，内部有代码逻辑的函数：
+    * ![ida_sub_has_logic](../assets/img/ida_sub_has_logic.jpg)
+* _dyld_register_func_for_remove_image传入的函数：nullsub_12445
+  * 从名字看，就知道：是个null的 空的 函数
+  * 进入看，果然是空的，啥也没有
+    * ![ida_nullsub_empty](../assets/img/ida_nullsub_empty.png)
+
 ## 具体含义
 
 ### qword

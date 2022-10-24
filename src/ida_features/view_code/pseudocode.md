@@ -30,6 +30,8 @@ TODO：
 
 IDA中，支持从`汇编代码`，按`F5`快捷键去`反编译`得到的`伪代码` -> 很接近人类写的代码，人类能容易读懂代码逻辑的代码
 
+![ida_pseudocode_example](../../assets/img/ida_pseudocode_example.jpg)
+
 IDA中最强的功能，应该就属这个`伪代码`了。
 
 IDA反编译出的`伪代码`：
@@ -85,3 +87,25 @@ IDA反编译出的`伪代码`：
 具体细节详见：
 
 [Interactive operation (hex-rays.com)](https://www.hex-rays.com/products/decompiler/manual/interactive.shtml)
+
+## 导出全部伪代码
+
+IDA中，一般来说，伪代码都是针对单个函数的：反编译再查看单个函数的伪代码。
+
+后来发现，想要导出全部伪代码，也是可以的。
+
+详见：
+
+* 【未解决】用插件导出IDA的YouTube的Module_Framework的全部反汇编的源码伪代码
+* 【已解决】IDA中用idat64的Batch Mode尝试反编译导出YouTube的Module_Framework全部代码伪代码
+
+## 标记为已编译 Mark/unmark as decompiled
+
+This command marks the current function as decompiled. It is a convenient way to track decompiled functions. Feel free to use it any way you want.
+Marking a function as decompiled will change its background color to the value specified by the MARK_BGCOLOR parameter in the configuration file. The background color will be used in the pseudocode window, in the disassembly listing, and in the function list.
+
+## 拷贝到汇编 Copy to assembly
+
+This command copies the pseudocode text to the disassembly window. It is available from the popup right-click menu.
+Please note that only "meaningful" lines are copied. Lines containing curly braces, else/do keywords will be omitted.
+The copied text is represented as anterior comments in the disassembly. Feel free edit them the way you want. The copied text is static and will not change if the pseudocode text changes.

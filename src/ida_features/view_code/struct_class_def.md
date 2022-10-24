@@ -12,6 +12,13 @@ TODO：
 
 IDA中，支持把类的原始定义，通过结构体的形式写出来（甚至自动分析出来对应结构体定义），从而后续的汇编代码和伪代码中，自动解析出类的属性和函数的调用，很是方便。
 
+此处的类的结构体定义，主要涉及到两方面：
+
+* `Structures`
+  * ![ida_structures_example](../../assets/img/ida_structures_example.jpg)
+* `Local Types`
+  * ![ida_local_types_example](../../assets/img/ida_local_types_example.jpg)
+
 且也支持新增自定义的结构体，更改已有类的结构体的字段定义等，很强大好用的功能。
 
 * 创建结构体
