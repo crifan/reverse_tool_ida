@@ -2,8 +2,8 @@
 
 ## IDA软件的不同版本
 
-常用结论：此处iOS逆向的话，常用的是`v7.0`的`IDA Pro`（中64位的`id64`）
-
+* 常用结论
+  * 此处iOS逆向的话，常用的是`v7.0`的`IDA Pro`（中64位的`id64`）
 * 概述
   * `IDA Teams`：Collaborative reverse-engineering work
     * 团队合作时才需要
@@ -19,6 +19,16 @@
   * ![ida_version_choose](../assets/img/ida_version_choose.png)
 
 ## IDA的历史版本号
+
+* 心得
+  * 刚发现，IDA的版本号，是`Major.Minor.ReleaseDate`的模式
+    * 举例
+      * IDA 8.1.221006 October 6, 2022
+        * `8.1.221006`
+          * `8.1`：主次版本号
+          * `221006`：发布日期=October 6, 2022
+
+历史发布的所有版本：
 
 [IDA updates and releases](https://hex-rays.com/products/ida/news/)
 

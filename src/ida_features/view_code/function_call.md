@@ -19,7 +19,7 @@ iOS逆向期间，往往涉及到，想要搞懂一个函数，被其他哪些�
     * Xrefs graph to
       * ![ida_xrefs_graph_to_aweme](../../assets/img/ida_xrefs_graph_to_aweme.png)
       * ![ida_xrefs_graph_all](../../assets/img/ida_xrefs_graph_all.png)
-      * ![ida_xrefs_graph_part](../../assets/img/ida_xrefs_graph_part.png)
+      * ![ida_xrefs_graph_part](../../assets/img/ida_xrefs_graph_part.jpg)
 
 ## Xrefs to=有哪些地方引用到了此函数
 

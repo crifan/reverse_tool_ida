@@ -52,6 +52,7 @@ IDA官网的下载中心：
     * Please check out the SDK documentation online (or download the zip file for offline use).
   * Flair 7.7
     * Add your own compiler libraries to the FLIRT engine
+      * `FLIRT`=`Fast Library Identification and Recognition Technology`
   * IDAClang 7.7
     * A type library generator based on libclang. Use this when parsing complex C++ code that tilib cannot handle.
   * Tilib 7.7

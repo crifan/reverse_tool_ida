@@ -1,5 +1,9 @@
 # 参考资料
 
+* 【整理】iOS逆向心得：IDA中的unk的含义
+* 【整理】IDA使用心得：常见名称及含义
+* 【整理】IDA使用心得：多种显示模式
+* 【已解决】IDA中浮动窗口Output Window如何固定到底部
 * 【未解决】研究抖音越狱检测逻辑：_RxAnnotationInlineLoader的load
 * 【未解决】IDA中用idat64的Batch Mode尝试反编译导出YouTube的Module_Framework全部代码伪代码
 * 
@@ -23,4 +27,7 @@
 * [Third-party plugins](https://hex-rays.com/products/decompiler/manual/third_party.shtml)
 * [onethawt/idaplugins-list: A list of IDA Plugins](https://github.com/onethawt/idaplugins-list)
 * [IDA Help: The Interactive Disassembler Help Index](https://hex-rays.com/products/ida/support/idadoc/index.shtml)
+* [如何将ida中的悬浮窗口恢复原位_TedLau的博客-CSDN博客_ida窗口还原](https://blog.csdn.net/qq_30204577/article/details/105396999)
+* [The basics of IDA pro - Infosec Resources (infosecinstitute.com)](https://resources.infosecinstitute.com/topic/basics-of-ida-pro-2/)
+* [IDA Pro7.0使用技巧总结 - 先知社区 (aliyun.com)](https://xz.aliyun.com/t/4205)
 * 
