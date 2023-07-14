@@ -6,6 +6,13 @@
 * 【已解决】IDA中浮动窗口Output Window如何固定到底部
 * 【未解决】研究抖音越狱检测逻辑：_RxAnnotationInlineLoader的load
 * 【未解决】IDA中用idat64的Batch Mode尝试反编译导出YouTube的Module_Framework全部代码伪代码
+* 【整理】学习IDA教程：The IDA Pro Book
+* 【整理】IDA中一些功能和选项设置
+* 【整理】IDA中的自动分析Autoanalysis
+* 【记录】用IDA分析加了符号表的抖音AwemeCore二进制
+* 【未解决】搞懂IDA中_D_objc_selrefs qword_38AF870 % 8的含义
+* 【记录】iOS的二进制中的__objc_selrefs的含义
+* 【已解决】IDA中抖音AwemeCore中字符串const char* qword_3893908的原始字符串
 * 
 * [Failures and troubleshooting (hex-rays.com)](https://www.hex-rays.com/products/decompiler/manual/failures.shtml)
 * [Igor’s tip of the week #49: Navigation band – Hex Rays (hex-rays.com)](https://hex-rays.com/blog/igors-tip-of-the-week-49-navigation-band/)
@@ -30,4 +37,10 @@
 * [如何将ida中的悬浮窗口恢复原位_TedLau的博客-CSDN博客_ida窗口还原](https://blog.csdn.net/qq_30204577/article/details/105396999)
 * [The basics of IDA pro - Infosec Resources (infosecinstitute.com)](https://resources.infosecinstitute.com/topic/basics-of-ida-pro-2/)
 * [IDA Pro7.0使用技巧总结 - 先知社区 (aliyun.com)](https://xz.aliyun.com/t/4205)
+* [IDA Help: String literal style dialog (hex-rays.com)](https://hex-rays.com/products/ida/support/idadoc/613.shtml)
+* [IDA Help: Processor Type (hex-rays.com)](https://hex-rays.com/products/ida/support/idadoc/618.shtml)
+* [IDA-Pro-Hex-Rays.pdf (software-sources.com)](https://software-sources.com/wp-content/uploads/2020/12/IDA-Pro-Hex-Rays.pdf)
+* [IDA Help: Analysis options (hex-rays.com)](https://hex-rays.com/products/ida/support/idadoc/620.shtml)
+* [Objective-C Runtime 分析 | 张不坏的博客 (zhangbuhuai.com)](https://zhangbuhuai.com/post/runtime.html)
+* [x86 - What's the meaning of dword_XXXX and offset dword_XXXX in IDA? - Reverse Engineering Stack Exchange](https://reverseengineering.stackexchange.com/questions/18946/whats-the-meaning-of-dword-xxxx-and-offset-dword-xxxx-in-ida)
 * 

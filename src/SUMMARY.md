@@ -21,6 +21,7 @@
   * [导入和导出](ida_features/import_export.md)
   * [插件](ida_features/plugins.md)
 * [IDA使用心得](ida_usage_note/README.md)
+  * [ObjC](ida_usage_note/objc.md)
 * [附录](appendix/README.md)
   * [文档和资料](appendix/doc_refer.md)
   * [参考资料](appendix/reference.md)

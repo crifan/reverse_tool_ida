@@ -2,13 +2,19 @@
 
 TODO：
 
-* 【未解决】搞懂IDA中_D_objc_selrefs qword_38AF870 % 8的含义
-* 【已解决】IDA中抖音AwemeCore中字符串const char* qword_3893908的原始字符串
+* 
 * 【已解决】iOS逆向心得：如何从对x8的adrp和ldr计算出对应的qword字符串值
 
 ---
 
 此处整理IDA中，各处看到的，各种名称的命令规则的含义。
+
+## 背景知识
+
+* `动态链接库`文件类型=后缀
+  *  `Windows`：`.dll`
+  *  `Linux`：`.so`
+  *  `Mac`：`.dylib`
 
 ## 大的类型
 
@@ -75,7 +81,13 @@ IDA中，对于未命令的内容，会采用默认从缩写命名。其命名�
   * 比如去改名的话，可以改名叫做：
     * sub_BinaryOffset
     * sub_AddressInsideBinary
-* `nullsub_xxx`：空函数（没有任何代码逻辑的）
+* `nullsub_xxx`：`空函数`（没有任何代码逻辑的）
+  * IDA中关于`空函数`的介绍
+    ```bash
+    Rename empty functions as nullsub_...
+      This option allows IDA to rename empty functions containing only a "return" instruction as "nullsub_..."
+      (... is replaced by a serial number: 0,1,2,3...)
+    ```
 
 此处给出实例：
 

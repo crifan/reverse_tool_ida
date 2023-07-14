@@ -1,11 +1,5 @@
 # 文档和资料
 
-TODO：
-
-* 【整理】学习IDA教程：The IDA Pro Book
-
----
-
 此处整理IDA相关的文档、教程、书籍等有价值的参考资料。
 
 ## IDA官网
@@ -146,6 +140,48 @@ IDA官网的下载中心：
       * By Tom Hayes
 
 抽空可以好好找找看看，有哪些值得好好利用的东西。
+
+## 《The IDA Pro Book - The Unofficial Guide to the World's Most Popular Disassembler.pdf》
+
+* [《The IDA Pro Book - The Unofficial Guide to the World's Most Popular Disassembler.pdf》](https://paper.bobylive.com/Tools/The%20IDA%20Pro%20Book%20%20The%20Unofficial%20Guide%20to%20the%20World%20%20039%20s%20Most%20Popular%20Disassembler.pdf)
+  * ![book_the_ida_pro_guide](../assets/img/book_the_ida_pro_guide.png)
+  * 评价：
+    * 内容详实，值得抽空好好参考和学习
+    * 感觉解释的很到位
+      * 先介绍背景知识
+      * 再介绍反编译
+      * 再介绍工具：IDA
+
+-> 已摘录的部分内容：
+
+* 编程语言历史
+  * First-generation languages
+    * These are the lowest form of language, generally consisting of ones and zeros or some shorthand form such as hexadecimal, and readable only by binary ninjas. Things are confusing at this level because it is often difficult to distinguish data from instructions since everything looks pretty much the same. First-generation languages may also be referred to as machine languages, and in some cases byte code, while machine language programs are often referred to as binaries.
+  * Second-generation languages
+    * Also called assembly languages, second-generation languages are a mere table lookup away from machine language and generally map specific bit patterns, or operation codes (opcodes), to short but memorable character sequences called mnemonics. Occasionally these mnemonics actually help programmers remember the instructions with which they are associated.
+    * An assembler is a tool used by programmers to translate their assembly language programs into machine language suitable for execution.
+  * Third-generation languages
+    * These languages take another step toward the expressive capability of natural languages by introducing keywords and constructs that programmers use as the building blocks for their programs. Third-generation languages are generally platform independent, though programs written using them may be platform dependent as a result of using features unique to a specific operating system. Often-cited examples include FORTRAN, COBOL, C, and Java. Programmers generally use compilers to translate their programs into assembly language or all the way to machine language (or some rough equivalent such as byte code).
+  * Fourth-generation languages
+    * These exist but aren’t relevant to this book and will not be discussed
+* 反汇编器、反编译器 的由来
+  * In a traditional software development model, compilers, assemblers, and linkers are used by themselves or in combination to create executable programs. In order to work our way backwards (or reverse engineer programs), we use tools to undo the assembly and compilation processes. Not surprisingly, such tools are called disassemblers and decompilers, and they do pretty much what their names imply. A disassembler undoes the assembly process, so we should expect assembly language as the output (and therefore machine language as input). Decompilers aim to produce output in a high-level language when given assembly or even machine language as input.
+* 为何恢复源代码source code recovery 不太容易？
+  * The compilation process is lossy.
+    * At the machine language level there are no variable or function names, and variable type information can be determined only by how the data is used rather than explicit type declarations. When you observe 32 bits of data being transferred, you’ll need to do some investigative work to determine whether those 32 bits represent an integer, a 32-bit floating point value, or a 32-bit pointer.
+  * Compilation is a many-to-many operation.
+    * This means that a source program can be translated to assembly language in many different ways, and machine language can be translated back to source in many different ways. As a result, it is quite common that compiling a file and immediately decompiling it may yield a vastly different source file from the one that was input.
+  * Decompilers are very language and library dependent.
+    * Processing a binary produced by a Delphi compiler with a decompiler designed to generate C code can yield very strange results. Similarly, feeding a compiled Windows binary through a decompiler that has no knowledge of the Windows programming API may not yield anything useful.
+  * A nearly perfect disassembly capability is needed in order to accurately decompile a binary.
+    * Any errors or omissions in the disassembly phase will almost certainly propagate through to the decompiled code.
+* 反汇编的典型用途
+  * The purpose of disassembly tools is often to facilitate understanding of programs when source code is unavailable. Common situations in which disassembly is used include these:
+    * Analysis of malware
+    * Analysis of closed-source software for vulnerabilities
+    * Analysis of closed-source software for interoperability
+    * Analysis of compiler-generated code to validate compiler performance/correctness
+    * Display of program instructions while debugging
 
 ## BH_Eagle_ida_pro.pdf
 

@@ -4,10 +4,18 @@
 
 * `IDA`
   * 版本和名称
-    * 其实`IDA`有多个版本，功能最强、用的最多最广泛是：`IDA Pro`
-      * 所以`IDA Pro`常简称为：`IDA`
-    * 完整的版本解释，详见后续章节：[版本](https://book.crifan.org/books/reverse_tool_ida/website/ida_common/version.html)
+    * 概述：
+      * `IDA`有多个版本，功能最强、用的最多最广泛是：`IDA Pro`
+        * 所以`IDA Pro`常简称为：`IDA`
+    * 详解
+      * 后续章节：[版本](../ida_common/version.md)
   * 概述：逆向工程的利器
+    * 图
+      * ![ida_pro_in_a_nutshell](../assets/img/ida_pro_in_a_nutshell.png)
+    * 文字
+      * `IDA Pro` – the state-of-the-art binary code analysis solution
+      * `IDA Pro` is the flagship product of `Hex-Rays`, the software provider in reverse engineering.
+      * Being an interactive and programmable disassembler and debugger, `IDA Pro` provides excellent quality performance on different platforms and is compatible with many processors. `IDA Pro` has become the de-facto standard for the analysis of hostile code, vulnerability research and commercial off-the-shelf validation
   * 常用于
     * iOS逆向
       * 静态分析：逆向二进制，研究代码逻辑
