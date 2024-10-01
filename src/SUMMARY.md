@@ -29,6 +29,7 @@
     * [开始调试](ida_dynamic_debug/ios/begin_debug.md)
     * [调试界面](ida_dynamic_debug/ios/debug_ui.md)
     * [常见问题](ida_dynamic_debug/ios/issues.md)
+* [子教程](sub_tutorial/README.md)
 * [附录](appendix/README.md)
   * [文档和资料](appendix/doc_refer.md)
   * [参考资料](appendix/reference.md)
