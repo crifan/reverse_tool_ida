@@ -13,6 +13,12 @@
 * 【未解决】搞懂IDA中_D_objc_selrefs qword_38AF870 % 8的含义
 * 【记录】iOS的二进制中的__objc_selrefs的含义
 * 【已解决】IDA中抖音AwemeCore中字符串const char* qword_3893908的原始字符串
+* 【已解决】iOS逆向WhatsApp：用IDA去调试WhatsApp
+* 【记录】重新启动IDA调试iOS调试环境
+* 【记录】IDA调试iOS的WhatsApp：开始调试
+* 【记录】IDA调试iOS的WhatsApp：相关调试界面
+* 【未解决】IDA调试iOS程序如何实现类似Xcode中lldb的po打印出对象信息
+* 【记录】IDA中符号表相关信息
 * 
 * [Failures and troubleshooting (hex-rays.com)](https://www.hex-rays.com/products/decompiler/manual/failures.shtml)
 * [Igor’s tip of the week #49: Navigation band – Hex Rays (hex-rays.com)](https://hex-rays.com/blog/igors-tip-of-the-week-49-navigation-band/)
@@ -43,4 +49,19 @@
 * [IDA Help: Analysis options (hex-rays.com)](https://hex-rays.com/products/ida/support/idadoc/620.shtml)
 * [Objective-C Runtime 分析 | 张不坏的博客 (zhangbuhuai.com)](https://zhangbuhuai.com/post/runtime.html)
 * [x86 - What's the meaning of dword_XXXX and offset dword_XXXX in IDA? - Reverse Engineering Stack Exchange](https://reverseengineering.stackexchange.com/questions/18946/whats-the-meaning-of-dword-xxxx-and-offset-dword-xxxx-in-ida)
+* [IDA 8.1 | Hex-Rays Docs](https://docs.hex-rays.com/release-notes/8_1)
+* [IDA 8.2 | Hex-Rays Docs](https://docs.hex-rays.com/release-notes/8_2)
+* [IDA 8.2sp1 | Hex-Rays Docs](https://docs.hex-rays.com/release-notes/8_2sp1)
+* [IDA 8.3 | Hex-Rays Docs](https://docs.hex-rays.com/release-notes/8_3)
+* [IDA 8.4 | Hex-Rays Docs](https://docs.hex-rays.com/release-notes/8_4)
+* [IDA 8.4sp1 | Hex-Rays Docs](https://docs.hex-rays.com/release-notes/8_4sp1)
+* [IDA 8.4sp2 | Hex-Rays Docs](https://docs.hex-rays.com/release-notes/8_4sp2)
+* [IDA 9.0 | Hex-Rays Docs](https://docs.hex-rays.com/release-notes/9_0)
+* [[iOS Hacker] IDA 7.0 动态调试 iOS App – exchen's blog](https://www.exchen.net/ida-70-ios-debugger.html)
+* [Tutorial: Debugging iOS Applications with IDA Pro (hex-rays.com)](https://www.hex-rays.com/wp-content/static/tutorials/ios_debugger_primer2/ios_debugger_primer2.html)
+* [ios_debugger_tutorial](https://www.hex-rays.com/wp-content/uploads/2019/12/ios_debugger_tutorial.pdf)
+* [Mickey Jin on X: "I really enjoy debugging everything inside the IDA Pro, because it is awesome and powerful. But I want to use the lldb command, like "po object" when debugging the objc program. Why don't you support lldb ? @HexRaysSA So I just wrote a simple script: https://t.co/BzWLtwwyLK https://t.co/TMDhdrPhqm" / X (twitter.com)](https://twitter.com/patch1t/status/1430110029537943552)
+* [simulator the lldb command like "po objc_object" inside the IDA debugger. (github.com)](https://gist.github.com/jhftss/6eb01f83377d909ea3dfb155cef4e08d)
+* [Quotes of this post / X (twitter.com)](https://twitter.com/patch1t/status/1430110029537943552/quotes)
+* [Tutorial: Debugging iOS Applications with IDA Pro (hex-rays.com)](https://www.hex-rays.com/wp-content/static/tutorials/ios_debugger_primer2/ios_debugger_primer2.html)
 * 

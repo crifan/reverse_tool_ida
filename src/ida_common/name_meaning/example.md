@@ -1,79 +1,29 @@
-# 命名和含义
+# 举例
 
-TODO：
+* 概述
+  * 各种
+    * ![ida_name_examples](../../assets/img/ida_name_examples.jpg)
+      * `sub_B7CBB90`
+      * `loc_B7CBBC4`
+      * `locret_B7CBC00`
+  * `sub`
+    * `sub_11326A84`
+      * ![ida_sub_example](../../assets/img/ida_sub_example.jpg)
+  * `unk`
+    * `unk_5922000`
+      * ![ida_example_unk](../../assets/img/ida_example_unk.jpg)
+    * `unk_196E8C0`
+      * ![name_unk_example](../../assets/img/name_unk_example.jpg)
+  * `qword`
+    * `qword_3A97BE0`
+      * ![ida_example_qword](../../assets/img/ida_example_qword.jpg)
+  * `loc`
+    * `loc_C47002C`
+      * ![name_loc_example](../../assets/img/name_loc_example.jpg)
 
-* 
-* 【已解决】iOS逆向心得：如何从对x8的adrp和ldr计算出对应的qword字符串值
+详解：
 
----
-
-此处整理IDA中，各处看到的，各种名称的命令规则的含义。
-
-## 背景知识
-
-* `动态链接库`文件类型=后缀
-  *  `Windows`：`.dll`
-  *  `Linux`：`.so`
-  *  `Mac`：`.dylib`
-
-## 大的类型
-
-* `F`=`Function`: regular function, which is not a library function.
-* `L`=`Library`: library function that can be recognized with different signatures that are part of IDA. If the matching signature is not found, the name is labeled as a regular function.
-* `I`=`Imported`: imported name from the shared library. The code from this function/name is not present in the executable and is provided at run time, whereas the library function is embedded into the executable.
-* `C`=`Code`: named code that represent program locations that are not part of any function, which can happen if the name is a part of the symbol table, but the executable never calls this function.
-* `D`=`Data`: named data locations that are usually global variables.
-* `A`=`Ascii`: ASCII string data that represents a string terminated with a null byte in the executable.
-
-## 命名规则
-
-IDA中，对于未命令的内容，会采用默认从缩写命名。其命名规则是：
-
-* IDA常见命名
-  * `sub`=`subroutine`=`子程序`：函数
-  * `locret`：返回指令
-  * `loc`：指令
-  * `off`=`offset`：某个偏移量，存放某个数据
-  * `seg`=`segment`：数据，包含段地址值
-  * `asc`=`ascii`：数据，ASCII字符串
-  * `byte`：数据，字节（或字节数组）
-  * `word`：数据，16位数据（或字数组）
-  * `dword`：数据，32位数据（或双字数组）
-  * `qword`：数据，64位数据（或4字数组）
-  * `flt`：浮点数据，32位（或浮点数组）
-  * `dbl`：浮点数，64位（或双精度数组）
-  * `tbyte`：浮点数，80位（或扩展精度浮点数）
-  * `stru`=`structure`：结构体(或结构体数组)
-  * `algn`=`align`：对齐指示
-  * `unk`=`unknown`：未处理字节
-  * 字节相关
-    * db=1个字节
-    * dw=2个字节
-    * dd=4个字节
-
-## 举例
-
-* 各种
-  * ![ida_name_examples](../assets/img/ida_name_examples.jpg)
-    * `sub_B7CBB90`
-    * `loc_B7CBBC4`
-    * `locret_B7CBC00`
-* `sub`
-  * `sub_11326A84`
-    * ![ida_sub_example](../assets/img/ida_sub_example.jpg)
-* `unk`
-  * `unk_5922000`
-    * ![ida_example_unk](../assets/img/ida_example_unk.jpg)
-  * `unk_196E8C0`
-    * ![name_unk_example](../assets/img/name_unk_example.jpg)
-* `qword`
-  * `qword_3A97BE0`
-    * ![ida_example_qword](../assets/img/ida_example_qword.jpg)
-* `loc`
-  * `loc_C47002C`
-    * ![name_loc_example](../assets/img/name_loc_example.jpg)
-
-### sub函数
+## sub函数
 
 关于sub函数的一些细节说明：
 
@@ -105,19 +55,17 @@ void __cdecl +[_RxAnnotationInlineLoader load](_RxAnnotationInlineLoader_meta *s
     j___dyld_register_func_for_remove_image((void (__cdecl *)(const struct mach_header *, intptr_t))nullsub_12445);
 ```
 
-![ida_sub_nullsub_example](../assets/img/ida_sub_nullsub_example.png)
+![ida_sub_nullsub_example](../../assets/img/ida_sub_nullsub_example.png)
 
 * _dyld_register_func_for_add_image传入的函数：sub_11326A84
   * 就是个普通的，内部有代码逻辑的函数：
-    * ![ida_sub_has_logic](../assets/img/ida_sub_has_logic.jpg)
+    * ![ida_sub_has_logic](../../assets/img/ida_sub_has_logic.jpg)
 * _dyld_register_func_for_remove_image传入的函数：nullsub_12445
   * 从名字看，就知道：是个null的 空的 函数
   * 进入看，果然是空的，啥也没有
-    * ![ida_nullsub_empty](../assets/img/ida_nullsub_empty.png)
+    * ![ida_nullsub_empty](../../assets/img/ida_nullsub_empty.png)
 
-## 具体含义
-
-### qword
+## qword
 
 对于qword：
 
@@ -133,7 +81,7 @@ void __cdecl +[_RxAnnotationInlineLoader load](_RxAnnotationInlineLoader_meta *s
 
 IDA伪代码：
 
-![ida_qword_38A1598](../assets/img/ida_qword_38A1598.jpg)
+![ida_qword_38A1598](../../assets/img/ida_qword_38A1598.jpg)
 
 ```c
     v4 = (const char *)qword_38A1598;
@@ -160,14 +108,13 @@ IDA伪代码：
 (lldb) po (char*)0x000000010185c42e
 "dynamicCast:"
 ```
-
-### unk
+## unk
 
 `unk`本身是IDA伪代码解析后，不知道变量具体的值什么类型，所以无法给出更加精准的变量命令。
 
 此处，通过具体例子来介绍，如何调试和计算真实的值
 
-#### unk_3F852B3是字符串
+### unk_3F852B3是字符串
 
 比如：
 
@@ -220,7 +167,7 @@ _D_cstring:0000000003F852B3 unk_3F852B3     % 1                     ; DATA XREF:
 
 所以再去优化IDA中的代码：把`unk_3F852B3`改名为`__DATA`
 
-![unk_rename_str_name](../assets/img/unk_rename_str_name.jpg)
+![unk_rename_str_name](../../assets/img/unk_rename_str_name.jpg)
 
 以及，IDA伪代码中，也去刷新即可看到新的变量名：
 
@@ -254,7 +201,7 @@ _D_cstring:0000000003F852B3 unk_3F852B3     % 1                     ; DATA XREF:
 
 IDA伪代码：
 
-![unk_1B52440_string](../assets/img/unk_1B52440_string.jpg)
+![unk_1B52440_string](../../assets/img/unk_1B52440_string.jpg)
 
 ```c
   v60 = objc_msgSend(
@@ -273,7 +220,7 @@ IDA中定义是：
 _D_cfstring:0000000001B52440 unk_1B52440     % 1                     ; DATA XREF: sub_11326A84+4B0↓o
 ```
 
-![unk_1B52440_define](../assets/img/unk_1B52440_define.jpg)
+![unk_1B52440_define](../../assets/img/unk_1B52440_define.jpg)
 
 注意到其中的`_D_cfstring` =`constant string` ?
 
@@ -287,7 +234,7 @@ _D_cfstring:0000000001B52440 unk_1B52440     % 1                     ; DATA XREF
 RxAnnotation:%@-%@-%@
 ```
 
-![xcode_debug_unk_1B52440](../assets/img/xcode_debug_unk_1B52440.jpg)
+![xcode_debug_unk_1B52440](../../assets/img/xcode_debug_unk_1B52440.jpg)
 
 即：
 

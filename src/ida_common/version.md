@@ -32,7 +32,15 @@
 
 [IDA updates and releases](https://hex-rays.com/products/ida/news/)
 
+* IDA 9.x
+  * IDA 9.0.240925 September 30, 2024
 * IDA 8.x
+  * IDA 8.4.240527 (SP2) May 27, 2024
+  * IDA 8.4.240320 (SP1) March 20, 2024
+  * IDA 8.4.240215 February 15, 2024
+  * IDA 8.3.230608 June 8, 2023
+  * IDA 8.2.230124 (SP1) January 24, 2023
+  * IDA 8.2.221215 December 15, 2022
   * IDA 8.1.221006 October 6, 2022
   * IDA 8.0.220829 (SP1) August 29, 2022
   * IDA 8.0.220729 July 29, 2022
