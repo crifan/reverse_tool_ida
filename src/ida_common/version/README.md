@@ -16,4 +16,4 @@
     * 免费，但功能有限
   * `IDA Demo`：仅仅作演示用，了解功能而已
 * 详解
-  * ![ida_version_choose](../assets/img/ida_version_choose.png)
+  * ![ida_version_choose](../../assets/img/ida_version_choose.png)
