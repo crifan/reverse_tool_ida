@@ -139,7 +139,7 @@ FFFFFFFFFFFFFFFF: thread has started (tid=6692478)
 
 后来发现了：
 
-![ida_debug_hex_raw](../../assets/img/ida_debug_hex_raw.png)
+![ida_debug_hex_raw](../../assets/img/ida_debug_hex_raw.jpg)
 
 此处是以hex的16进制，查看二进制的原始数据
 

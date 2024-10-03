@@ -19,6 +19,11 @@
 * 【记录】IDA调试iOS的WhatsApp：相关调试界面
 * 【未解决】IDA调试iOS程序如何实现类似Xcode中lldb的po打印出对象信息
 * 【记录】IDA中符号表相关信息
+* 【整理】IDA使用心得：OpCode区
+* 【整理】IDA使用心得：auto comments
+* 【已解决】IDA中查看ARM汇编的伪代码
+* 【已解决】IDA使用心得：IDA汇编代码如何快速找到匹配的Xcode汇编代码
+* 【未解决】IDA中开启宏指令比如ADRP和ADD变成ADRL
 * 
 * [Failures and troubleshooting (hex-rays.com)](https://www.hex-rays.com/products/decompiler/manual/failures.shtml)
 * [Igor’s tip of the week #49: Navigation band – Hex Rays (hex-rays.com)](https://hex-rays.com/blog/igors-tip-of-the-week-49-navigation-band/)

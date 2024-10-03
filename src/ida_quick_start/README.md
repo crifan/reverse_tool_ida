@@ -30,14 +30,3 @@
       * 互相配合：把Xcode中的实时的汇编代码 和 IDA中伪代码，互相对应起来，便于理解代码逻辑
       * 后续的优化代码逻辑：在逐渐搞懂更多代码逻辑后，继续给IDA中的`伪代码`去优化代码，主要是给参数、变量、函数等改名，以及更进一步的，新增或修改类的结构体定义，使得伪代码中自动解析出正确的类的函数和属性的调用等内容。
   * 偶尔用：用IDA调试二进制
-
-## 下载
-
-[IDA官网](https://hex-rays.com/)有试用版可供下载：
-
-[Download center (hex-rays.com)](https://hex-rays.com/download-center/)
-
-->
-
-* [IDA Free](https://hex-rays.com/ida-free/#download)
-* [IDA Evaluation](https://out7.hex-rays.com/demo/request)

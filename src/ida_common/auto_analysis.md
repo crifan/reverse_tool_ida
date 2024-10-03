@@ -48,9 +48,9 @@ IDA中默认已开启左下角的：
 * FL=Flow
   * ![auto_analysis_step_fl](../assets/img/auto_analysis_step_fl.png)
 * PR=PRocedure
-  * ![auto_analysis_step_pr](../assets/img/auto_analysis_step_pr.png)
+  * ![auto_analysis_step_pr](../assets/img/auto_analysis_step_pr.jpg)
 * AC = Address
-  * ![auto_analysis_step_ac](../assets/img/auto_analysis_step_ac.png)
+  * ![auto_analysis_step_ac](../assets/img/auto_analysis_step_ac.jpg)
 * FI=Final
   * ![auto_analysis_step_fi](../assets/img/auto_analysis_step_fi.png)
 * WF=Weak
