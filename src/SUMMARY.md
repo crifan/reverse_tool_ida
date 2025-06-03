@@ -22,6 +22,7 @@
   * [字符串](ida_features/strings.md)
   * [函数列表](ida_features/function_list.md)
   * [导入和导出](ida_features/import_export.md)
+  * [打补丁](ida_features/patch_program.md)
   * [插件](ida_features/plugins.md)
 * [IDA使用心得](ida_usage_note/README.md)
   * [打开和关闭](ida_usage_note/open_close.md)
