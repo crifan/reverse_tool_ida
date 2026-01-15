@@ -30,7 +30,7 @@ TODO：
 
 IDA中，支持从`汇编代码`，按`F5`快捷键去`反编译`得到的`伪代码` -> 很接近人类写的代码，人类能容易读懂代码逻辑的代码
 
-![ida_pseudocode_example](../../assets/img/ida_pseudocode_example.jpg)
+![ida_pseudocode_example](../../../assets/img/ida_pseudocode_example.jpg)
 
 IDA中最强的功能，应该就属这个`伪代码`了。
 
@@ -87,17 +87,6 @@ IDA反编译出的`伪代码`：
 具体细节详见：
 
 [Interactive operation (hex-rays.com)](https://www.hex-rays.com/products/decompiler/manual/interactive.shtml)
-
-## 导出全部伪代码
-
-IDA中，一般来说，伪代码都是针对单个函数的：反编译再查看单个函数的伪代码。
-
-后来发现，想要导出全部伪代码，也是可以的。
-
-详见：
-
-* 【未解决】用插件导出IDA的YouTube的Module_Framework的全部反汇编的源码伪代码
-* 【已解决】IDA中用idat64的Batch Mode尝试反编译导出YouTube的Module_Framework全部代码伪代码
 
 ## 标记为已编译 Mark/unmark as decompiled
 

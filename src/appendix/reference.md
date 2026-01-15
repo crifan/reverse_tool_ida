@@ -25,6 +25,8 @@
 * 【已解决】IDA使用心得：IDA汇编代码如何快速找到匹配的Xcode汇编代码
 * 【未解决】IDA中开启宏指令比如ADRP和ADD变成ADRL
 * 【记录】IDA中给libsscronet.so打补丁patch program修改二进制
+* 【未解决】用插件导出IDA的YouTube的Module_Framework的全部反汇编的源码伪代码
+* 【已解决】IDA中用idat64的Batch Mode尝试反编译导出YouTube的Module_Framework全部代码伪代码
 * 
 * [Failures and troubleshooting (hex-rays.com)](https://www.hex-rays.com/products/decompiler/manual/failures.shtml)
 * [Igor’s tip of the week #49: Navigation band – Hex Rays (hex-rays.com)](https://hex-rays.com/blog/igors-tip-of-the-week-49-navigation-band/)
